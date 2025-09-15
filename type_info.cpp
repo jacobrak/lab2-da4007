@@ -10,7 +10,7 @@
 // Question 2
 // char is explained above
 // string; stores and manipulates character-like objects 32 bytes
-// "" is 1 byte, 1 for \0
+// "" is 1 byte, 1 for \0, the \0 works as a null terminator here for more details https://en.wikipedia.org/wiki/Null-terminated_string
 // "x" is 2 bytes, 1 byte for ch and 1 for \0
 // "da40047" is 7 bytes, 6 bytes of ch and 1 for \0
 #include <iostream>
