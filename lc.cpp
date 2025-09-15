@@ -4,11 +4,11 @@
 using namespace std;
 using namespace std::filesystem; // path
 
-int count_lines(istream& in) {
+int count_lines(istream& input) {
     // this apporach itterates through the text, close to the one in https://www.gnu.org/software/cflow/manual/html_node/Source-of-wc-command.html
     int count = 0;
     char ch;
-    while (in.get(ch)) {
+    while (input.get(ch)) {
         if (ch == '\n') // wc -l counts newline charcters not lines
             ++count;
     }
