@@ -18,7 +18,6 @@ int count_lines(istream& input) {
 int main(int argc, char* argv[]) {
     if (argc == 1) {
         // stdin in case of no argument
-        cerr << "input text Please..." << endl;
         cout << count_lines(cin) << endl;
     } 
     else {
