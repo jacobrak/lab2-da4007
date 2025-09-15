@@ -5,7 +5,7 @@ using namespace std;
 
 
 bool check_if_prime(int n) {
-    // Base condition 0 and 1 are not primes, however lowest number input is 2, still decided to keep it.
+    // Base condition 0 and 1 are not primes, however lowest number input is 2, still decided to keep it, good practice.
     if (n <= 1) return false;
 
     for (int i = 2; i <= sqrt(n); i++) {
