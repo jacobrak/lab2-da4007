@@ -18,8 +18,10 @@ int count_lines(istream& in) {
 int main(int argc, char* argv[]) {
     if (argc == 1) {
         // stdin in case of no argument
+        cerr << "input text Please..." << endl;
         cout << count_lines(cin) << endl;
-    } else {
+    } 
+    else {
         // Argument given, open that file
         path p{argv[1]};
         ifstream file(p, ios::binary);
